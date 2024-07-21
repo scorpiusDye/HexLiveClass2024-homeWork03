@@ -1,4 +1,75 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer-blk {
+  @media (max-width: 767px) {
+    padding: 16px 24px;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding: 40px;
+  }
+}
+.contact-icon {
+  font-size: 18px;
+  padding-right: 11px;
+  @media (min-width: 767px) {
+    font-size: 36px;
+    padding-right: 22px;
+  }
+}
+.footer-nav-blk {
+  margin-left: -24px;
+  margin-right: -24px;
+}
+.footer-nav-text {
+  font-size: 16px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding: 8px 24px;
+  }
+  @media (min-width: 1200px) {
+    padding: 12px 24px;
+  }
+}
+.social-btn-list {
+  @media (max-width: 767px) {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  @media (min-width: 768px) {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+.social-btn-item {
+  @media (max-width: 767px) {
+    padding: 0px 8px;
+  }
+  @media (min-width: 768px) {
+    padding: 0px 16px;
+  }
+}
+footer {
+  .btn-social {
+    @media (max-width: 767px) {
+      width: 24px;
+      height: 24px;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      width: 40px;
+      height: 40px;
+    }
+    @media (min-width: 1200px) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+.footer-top-blk {
+  border-bottom: 1px solid var(--white);
+  @media (max-width: 767px) {
+    padding-bottom: 24px;
+  }
+  @media (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 48px;
+  }
 }
