@@ -9,6 +9,10 @@
 }
 .container {
   max-width: 1296px;
+  @media (min-width: 1200px) and (max-width: 1319px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 .hide-text {
   text-indent: 101%;
@@ -51,10 +55,10 @@
   align-items: center;
 }
 .align-item-md-center {
-	@media (min-width: 768px) {
-	  align-items: center;
-	}
+  @media (min-width: 768px) {
+    align-items: center;
   }
+}
 .align-item-xl-center {
   @media (min-width: 1200px) {
     align-items: center;
