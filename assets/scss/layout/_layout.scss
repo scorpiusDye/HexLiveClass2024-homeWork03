@@ -34,6 +34,11 @@
 .d-flex {
   display: flex;
 }
+.d-md-flex {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
 .d-xl-flex {
   @media (min-width: 1200px) {
     display: flex;
@@ -45,6 +50,11 @@
 .align-items-center {
   align-items: center;
 }
+.align-item-md-center {
+	@media (min-width: 768px) {
+	  align-items: center;
+	}
+  }
 .align-item-xl-center {
   @media (min-width: 1200px) {
     align-items: center;

@@ -73,3 +73,33 @@ footer {
     padding-top: 48px;
   }
 }
+.footer-bottom-blk{
+  @media (max-width: 767px) {
+    padding-top: 16px;
+  }
+  @media (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+  p{
+    @media (max-width: 767px) {
+      padding-bottom: 8px;
+    }
+  }
+  ul{
+    @media (max-width: 767px) {
+      margin-bottom: -8px;
+    }
+    @media (min-width: 768px) {
+      margin-left: -24px;
+      margin-right: -24px;
+    }
+  }
+  li{
+    padding-bottom: 8px;
+    @media (min-width: 768px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+}
