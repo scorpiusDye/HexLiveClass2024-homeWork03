@@ -19,7 +19,7 @@ nav {
   @media (max-width: 767px) {
     width: 100%;
     text-align: center;
-    outline: 1px solid var(--white);
+    outline: 1px solid $white;
   }
   @media (min-width: 768px) {
     padding-left: 32px;
@@ -32,7 +32,7 @@ nav {
   }
 }
 .nav-blk {
-  @media (min-width: 1200px) {
+  @media (min-width: 1400px) {
     margin-left: -32px;
     margin-right: -32px;
   }

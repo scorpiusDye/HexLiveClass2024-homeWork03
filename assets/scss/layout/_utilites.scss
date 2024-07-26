@@ -1,11 +1,13 @@
-:root {
-  --primary: #fbf2f2;
-  --primary: #aa0601;
-  --black: ##000000;
-  --white: #fff;
-}
+//原生變數(改寫為scss變數，留參考用)
+// :root {
+//   --primary: #fbf2f2;
+//   --primary: #aa0601;
+//   --black: #000000;
+//   --white: #fff;
+// }
+
 .bg-secondary {
-  background-color: var(--primary);
+  background-color: $secondary;
 }
 .container {
   max-width: 1296px;
@@ -24,7 +26,7 @@
   margin: 0 auto;
 }
 .text-white {
-  color: var(--white);
+  color: $white;
 }
 .text-decoration-none {
   text-decoration: none;
