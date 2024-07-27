@@ -1,3 +1,166 @@
-.index-title {
-  font-size: 100px;
+.index-banner {
+  background: url(../../assets/images/home-header-sm.png) center center
+    no-repeat;
+  background-size: cover;
+  height: 396px;
+  padding: 0 14px;
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    @media (min-width: 768px) {
+      font-size: 64px;
+    }
+  }
+  a {
+    padding: 6px 12px;
+    background-color: $secondary;
+    transition: all, 0.3s;
+  }
+  @media (min-width: 768px) {
+    height: 787px;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding: 0 40px;
+  }
+  @media (min-width: 1200px) {
+    padding: 0 auto;
+    background: url(../../assets/images/home-header.png) center center no-repeat;
+    background-size: cover;
+  }
+}
+.title-content {
+  font-size: 24px;
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
+}
+.index-icon-intro-list {
+  @media (min-width: 768px) {
+    margin: 0 -12px;
+  }
+  img {
+    width: 84px;
+    height: 84px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  li {
+    margin-top: 32px;
+    @media (min-width: 768px) {
+      width: 50%;
+      padding: 0 12px;
+    }
+    @media (min-width: 1200px) {
+      width: 25%;
+    }
+  }
+}
+.index-classical-card-list {
+  h4 {
+    color: $secondary;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 48px;
+    padding: 8px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  @media (min-width: 768px) {
+    margin: 0 -12px;
+  }
+  li {
+    margin-top: 24px;
+    background-color: $white;
+    @media (min-width: 768px) {
+      width: 336px;
+    }
+    @media (min-width: 1200px) {
+      padding: 0 12px;
+      width: 33.33333%;
+      margin-top: 48px;
+    }
+  }
+  @media (min-width: 1200px) {
+    img {
+      transition: all 0.3s ease-in-out;
+    }
+    a {
+      &:hover,
+      &:focus {
+        background-color: $secondary;
+        h4 {
+          color: $white;
+        }
+        img {
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+}
+.bg-coBrand {
+  background: url(../../assets/images/index-bg-sm.png) center center no-repeat;
+  background-size: cover;
+}
+.index-coBrand-card-list {
+  @media (min-width: 768px) {
+    margin: 0px;
+  }
+  li {
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+    @media (min-width: 1200px) {
+      padding: 0;
+      width: 50%;
+    }
+  }
+}
+.index-recommend-list{
+  @media (min-width: 768px) {
+    margin: auto -12px;
+  }
+  .card-content{
+    padding: 16px;
+    min-height: 200px;
+  }
+  li{
+    margin-top: 16px;
+    @media (min-width: 768px) {
+      margin-top: 24px;
+      width: 50%;
+      padding: 0 12px;
+    }
+    @media (min-width: 1200px) {
+      width: 25%;
+      margin-top: 48px;
+    }
+  }
+  .item{
+    border: 1px solid #DEE2E6;
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 8px;
+  }
+  .date{
+    font-size: 14px;
+  }
+}
+.index-form-blk{
+  max-width: 576px;
+  @media (min-width: 1200px) {
+    max-width: 636px;
+    p{
+      font-size: 20px;
+    }
+  }
+}
+input{
+  height: 36px;
+}
+input,textarea{
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid $black;
+  color: rgba(0,0,0, .2);
 }
