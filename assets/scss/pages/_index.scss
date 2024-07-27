@@ -149,12 +149,12 @@
   max-width: 576px;
   @media (min-width: 1200px) {
     max-width: 636px;
-    p{
+    .intro{
       font-size: 20px;
     }
   }
 }
-input{
+.h-36px{
   height: 36px;
 }
 input,textarea{
@@ -163,4 +163,17 @@ input,textarea{
   background-color: transparent;
   border: 1px solid $black;
   color: rgba(0,0,0, .2);
+}
+input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 1px solid $black;
+}
+button[type="submit"]{
+  width: 100%;
+  padding: 16px;
+  max-width: 416px;
+  border: 0px;
+  background-color: $secondary;
 }
