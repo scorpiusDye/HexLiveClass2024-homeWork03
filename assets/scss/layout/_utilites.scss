@@ -204,7 +204,7 @@
 }
 .mb-rwd-md{
   margin-bottom: $mb-s;
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     margin-bottom: $mb-xl;
   }
 }
