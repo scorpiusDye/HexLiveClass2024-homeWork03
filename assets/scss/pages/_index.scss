@@ -157,23 +157,3 @@
 .h-36px{
   height: 36px;
 }
-input,textarea{
-  width: 100%;
-  padding: 12px;
-  background-color: transparent;
-  border: 1px solid $black;
-  color: rgba(0,0,0, .2);
-}
-input[type="checkbox"]{
-  width: 18px;
-  height: 18px;
-  background-color: transparent;
-  border: 1px solid $black;
-}
-button[type="submit"]{
-  width: 100%;
-  padding: 16px;
-  max-width: 416px;
-  border: 0px;
-  background-color: $secondary;
-}

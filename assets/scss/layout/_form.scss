@@ -1,0 +1,66 @@
+input,textarea{
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid $black;
+  color: rgba(0,0,0, .2);
+}
+input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 1px solid $black;
+}
+button[type="submit"]{
+  width: 100%;
+  padding: 16px;
+  max-width: 416px;
+  border: 0px;
+  background-color: $secondary;
+}
+// input[type="select"]{
+//   width: 276px;
+//   height: 38px;
+//   background-color: transparent;
+//   border: 1px solid $light-gray;
+// }
+
+// .custom-select-wrapper {
+//   position: relative;
+//   display: inline-block;
+//   width: 200px;
+// }
+
+.select-style{
+  select{
+    width: 276px;
+    height: 38px;
+    color: $gray;
+    background-color: transparent;
+    border: 1px solid $light-gray;
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+  @media (min-width: 768px) {
+    .label-title{
+      font-size: 24px;
+    }
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid $black;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}
+
+.appearance-none {
+  appearance: none; /* 移除預設的箭頭 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
