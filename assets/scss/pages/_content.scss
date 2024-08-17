@@ -4,13 +4,13 @@
   }
 }
 .store-list-blk {
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @include md-to-xl{
     width: 50%;
   }
-  @media (min-width: 768px) {
+  @include md{
     padding: 0 12px;
   }
-  @media (min-width: 1200px) {
+  @include xl{
     width: 33.33333%;
   }
 }

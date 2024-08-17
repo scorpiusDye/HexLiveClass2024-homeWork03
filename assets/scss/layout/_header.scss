@@ -7,40 +7,41 @@ nav {
       width: 80px;
       height: 49px;
     }
-    @media (max-width: 1199px) {
+    @include xs-to-md{
       margin-left: 15px;
       padding-top: 16px;
       padding-bottom: 16px;
     }
   }
 }
+
 .nav-text {
   font-size: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
-  @media (max-width: 767px) {
+  @include xs{
     width: 100%;
     text-align: center;
     outline: 1px solid $white;
   }
-  @media (min-width: 768px) {
+  @include md{
     padding-left: 32px;
     padding-right: 32px;
   }
-  @media (min-width: 1200px) {
+  @include xl{
     font-size: 20px;
     padding-top: 25px;
     padding-bottom: 25px;
   }
 }
 .nav-blk {
-  @media (min-width: 1400px) {
+  @include xxl{
     margin-left: -32px;
     margin-right: -32px;
   }
 }
 .nav-item {
-  @media (max-width: 767px) {
+  @include xs{
     width: 50%;
   }
 }

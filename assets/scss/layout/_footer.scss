@@ -1,31 +1,31 @@
 .footer-blk {
-  @media (max-width: 767px) {
+  @include xs{
     padding: 16px 24px;
   }
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @include md-to-xl{
     padding: 40px;
   }
 }
 .contact-icon {
   font-size: 18px;
   padding-right: 11px;
-  @media (min-width: 767px) {
+  @include xl{
     font-size: 36px;
     padding-right: 22px;
   }
 }
 .footer-nav-blk {
-  @media (min-width: 768px) {
+  @include md{
     margin-left: -24px;
     margin-right: -24px;
   }
 }
 .footer-nav-text {
   font-size: 16px;
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @include md-to-xl{
     padding: 8px 24px;
   }
-  @media (min-width: 1200px) {
+  @include xl{
     padding: 12px 24px;
   }
 }
@@ -38,25 +38,25 @@
   }
 }
 .social-btn-item {
-  @media (max-width: 767px) {
+  @include xs{
     padding: 0px 8px;
   }
-  @media (min-width: 768px) {
+  @include md{
     padding: 0px 16px;
   }
   
 }
 footer {
   .btn-social {
-    @media (max-width: 767px) {
+    @include xs{
       width: 24px;
       height: 24px;
     }
-    @media (min-width: 768px) and (max-width: 1199px) {
+    @include md-to-xl{
       width: 40px;
       height: 40px;
     }
-    @media (min-width: 1200px) {
+    @include xl{
       width: 48px;
       height: 48px;
     }
@@ -64,31 +64,33 @@ footer {
 }
 .footer-top-blk {
   border-bottom: 1px solid $white;
-  @media (max-width: 767px) {
+  @include xs{
     padding-bottom: 24px;
   }
-  @media (min-width: 768px) {
+  @include md{
     padding-bottom: 32px;
   }
-  @media (min-width: 1200px) {
+  @include xl{
     padding-top: 48px;
   }
 }
 .footer-bottom-blk{
-  @media (max-width: 767px) {
+  @include xs{
     padding-top: 16px;
   }
-  @media (min-width: 768px) {
+  @include md{
     padding-top: 32px;
+  }
+  @include xl{
     padding-bottom: 40px;
   }
   p{
-    @media (max-width: 767px) {
+    @include xs{
       padding-bottom: 8px;
     }
   }
   ul{
-    @media (max-width: 767px) {
+    @include xs{
       margin-bottom: -8px;
     }
     :first-child{
@@ -100,7 +102,7 @@ footer {
   }
   li{
     padding-bottom: 8px;
-    @media (min-width: 768px) {
+    @include md{
       padding-left: 24px;
       padding-right: 24px;
     }

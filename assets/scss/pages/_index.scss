@@ -7,7 +7,7 @@
   h2 {
     font-size: 24px;
     font-weight: bold;
-    @media (min-width: 768px) {
+    @include md{
       font-size: 64px;
     }
   }
@@ -16,13 +16,13 @@
     background-color: $secondary;
     transition: all, 0.3s;
   }
-  @media (min-width: 768px) {
+  @include md{
     height: 787px;
   }
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @include md-to-xl{
     padding: 0 40px;
   }
-  @media (min-width: 1200px) {
+  @include xl{
     padding: 0 auto;
     background: url(../../assets/images/home-header.png) center center no-repeat;
     background-size: cover;
@@ -47,11 +47,11 @@
   }
   li {
     margin-top: 32px;
-    @media (min-width: 768px) {
+    @include md{
       width: 50%;
       padding: 0 12px;
     }
-    @media (min-width: 1200px) {
+    @include xl{
       width: 25%;
     }
   }
@@ -65,16 +65,16 @@
     padding: 8px 0;
     transition: all 0.3s ease-in-out;
   }
-  @media (min-width: 768px) {
+  @include md{
     margin: 0 -12px;
   }
   li {
     margin-top: 24px;
     background-color: $white;
-    @media (min-width: 768px) {
+    @include md{
       width: 336px;
     }
-    @media (min-width: 1200px) {
+    @include xl{
       padding: 0 12px;
       width: 33.33333%;
       margin-top: 48px;
@@ -103,21 +103,21 @@
   background-size: cover;
 }
 .index-coBrand-card-list {
-  @media (min-width: 768px) {
+  @include md{
     margin: 0px;
   }
   li {
-    @media (min-width: 768px) {
+    @include md{
       width: 100%;
     }
-    @media (min-width: 1200px) {
+    @include xl{
       padding: 0;
       width: 50%;
     }
   }
 }
 .index-recommend-list{
-  @media (min-width: 768px) {
+  @include md{
     margin: auto -12px;
   }
   .card-content{
@@ -126,12 +126,12 @@
   }
   li{
     margin-top: 16px;
-    @media (min-width: 768px) {
+    @include md{
       margin-top: 24px;
       width: 50%;
       padding: 0 12px;
     }
-    @media (min-width: 1200px) {
+    @include xl{
       width: 25%;
       margin-top: 48px;
     }
@@ -147,7 +147,7 @@
 }
 .index-form-blk{
   max-width: 576px;
-  @media (min-width: 1200px) {
+  @include xl{
     max-width: 636px;
     .intro{
       font-size: 20px;

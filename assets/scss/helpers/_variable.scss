@@ -1,9 +1,9 @@
 $secondary: #aa0601;
 $secondary-dark: #650300;
-$secondary-light:#FBF2F2;
+$secondary-light: #fbf2f2;
 $black: #000;
 $gray: #707070;
-$light-gray: #CED4DA;
+$light-gray: #ced4da;
 $white: #fff;
 
 $padding-s: 40px 14px;
@@ -12,3 +12,34 @@ $padding-xl: 80px 0;
 
 $mb-s: 24px;
 $mb-xl: 48px;
+
+@mixin xs {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin md-to-xl {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin xs-to-md {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}

@@ -41,7 +41,7 @@ button[type="submit"]{
     font-size: 18px;
     padding: 6px 12px;
   }
-  @media (min-width: 768px) {
+  @include md{
     .label-title{
       font-size: 24px;
     }
